@@ -970,6 +970,7 @@ errorCapturingIdentifierExtra
 
 identifier
     : strictIdentifier
+    | variable
     | {!SQL_standard_keyword_behavior}? strictNonReserved
     ;
 
@@ -982,6 +983,10 @@ strictIdentifier
 
 quotedIdentifier
     : BACKQUOTED_IDENTIFIER
+    ;
+
+variable
+    : CUSTOM_VARS
     ;
 
 number
@@ -1793,7 +1798,7 @@ BIGDECIMAL_LITERAL
     ;
 
 IDENTIFIER
-    : (LETTER | DIGIT | '_' | CUSTOM_VARS)+
+    : (LETTER | DIGIT | '_')+
     ;
 
 BACKQUOTED_IDENTIFIER

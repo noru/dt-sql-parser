@@ -1,4 +1,4 @@
-// Generated from /Users/ziv/Workspace/dt-sql-parser/src/grammar/spark/SparkSql.g4 by ANTLR 4.8
+// Generated from /Users/zxiu/code/dt-sql-parser/src/grammar/spark/SparkSql.g4 by ANTLR 4.8
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 
@@ -1550,6 +1550,12 @@ SparkSqlVisitor.prototype.visitQuotedIdentifierAlternative = function(ctx) {
 
 // Visit a parse tree produced by SparkSqlParser#quotedIdentifier.
 SparkSqlVisitor.prototype.visitQuotedIdentifier = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by SparkSqlParser#variable.
+SparkSqlVisitor.prototype.visitVariable = function(ctx) {
   return this.visitChildren(ctx);
 };
 

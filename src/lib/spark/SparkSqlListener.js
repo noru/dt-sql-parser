@@ -1,4 +1,4 @@
-// Generated from /Users/ziv/Workspace/dt-sql-parser/src/grammar/spark/SparkSql.g4 by ANTLR 4.8
+// Generated from /Users/zxiu/code/dt-sql-parser/src/grammar/spark/SparkSql.g4 by ANTLR 4.8
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 
@@ -2321,6 +2321,15 @@ SparkSqlListener.prototype.enterQuotedIdentifier = function(ctx) {
 
 // Exit a parse tree produced by SparkSqlParser#quotedIdentifier.
 SparkSqlListener.prototype.exitQuotedIdentifier = function(ctx) {
+};
+
+
+// Enter a parse tree produced by SparkSqlParser#variable.
+SparkSqlListener.prototype.enterVariable = function(ctx) {
+};
+
+// Exit a parse tree produced by SparkSqlParser#variable.
+SparkSqlListener.prototype.exitVariable = function(ctx) {
 };
 
 
