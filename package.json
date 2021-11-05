@@ -14,6 +14,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
   "scripts": {
     "antlr4": "node build/antlr4.js",
     "build": "rm -rf dist && tsc",
@@ -38,7 +39,8 @@
   "git repository": "https://github.com/noru/dt-sql-parser",
   "repository": "https://github.com/noru/dt-sql-parser",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "dependencies": {
     "@types/antlr4": "4.7.0",
