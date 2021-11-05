@@ -1,5 +1,5 @@
 {
-  "name": "dt-sql-parser",
+  "name": "@drewxiu/dt-sql-parser",
   "version": "4.0.0-beta.2.2",
   "description": "SQL Parsers for BigData, built with antlr4",
   "keywords": [
@@ -35,8 +35,8 @@
     "typescript": "^3.6.3",
     "standard-version": "^9.1.0"
   },
-  "git repository": "https://github.com/DTStack/dt-sql-parser",
-  "repository": "https://github.com/DTStack/dt-sql-parser",
+  "git repository": "https://github.com/noru/dt-sql-parser",
+  "repository": "https://github.com/noru/dt-sql-parser",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
