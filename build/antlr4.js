@@ -5,16 +5,10 @@ const antlr4 = path.resolve(__dirname, 'antlr-4.8-complete.jar');
 const grammars = path.resolve(__dirname, '../src/grammar');
 const output = path.resolve(__dirname, '../src/lib');
 
-const entry = [
-    'generic',
-    'hive',
-    'plsql',
-    'spark',
-    'flinksql',
-];
+const entry = ['spark'];
 
 entry.forEach((language) => {
-    const cmd = `
+  const cmd = `
         java -jar ${antlr4}
         -Dlanguage=JavaScript 
         -visitor
@@ -22,13 +16,12 @@ entry.forEach((language) => {
         -o ${output}/${language}
         ${grammars}/${language}/*.g4 
     `.replace(/\n/g, '');
-    console.log('cmd:', cmd);
-    exec(cmd, (err) => {
-        if (err) {
-            console.error('Antlr4 build error: ' + language, err);
-        } else {
-            console.log(`Build ${language} success.`);
-        }
-    });
+  console.log('cmd:', cmd);
+  exec(cmd, (err) => {
+    if (err) {
+      console.error('Antlr4 build error: ' + language, err);
+    } else {
+      console.log(`Build ${language} success.`);
+    }
+  });
 });
-
