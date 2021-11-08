@@ -1,6 +1,6 @@
 {
   "name": "@drewxiu/dt-sql-parser",
-  "version": "4.0.0-beta.2.2",
+  "version": "0.0.0",
   "description": "SQL Parsers for BigData, built with antlr4",
   "keywords": [
     "sql",
@@ -32,9 +32,9 @@
     "eslint": "^7.7.0",
     "eslint-config-google": "^0.14.0",
     "jest": "^24.8.0",
+    "standard-version": "^9.1.0",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.6.3",
-    "standard-version": "^9.1.0"
+    "typescript": "^4.4.4"
   },
   "git repository": "https://github.com/noru/dt-sql-parser",
   "repository": "https://github.com/noru/dt-sql-parser",
